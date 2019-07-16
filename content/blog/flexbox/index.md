@@ -1,13 +1,11 @@
 ---
-title: FLEXBOX
+title: Flexbox
 date: "2015-02-03T22:40:32.169Z"
 description: In this post I’m going to write about flexbox and it’s properties.
 ---
-flexbox is one of the most powerful layout system in css,which works in 
-1-Dimension either through main axis or cross axis. According to the re-
-quirements we can positioned and resized the small building blocks ,which
-made through flex on our website.It is one of the easiest way to made re-
+flexbox is one of the most powerful layout system in css,which works in 1-Dimension either through main axis or cross axis. According to the requirements we can positioned and resized the small building blocks ,which made through flex on our website.It is one of the easiest way to made re-
 sponsive website and adapt well to all screen sizes by using flex properties.
+([Medium Link](https://medium.com/@psubham94/flexbox-35ee27c18e83))
 
 # Flexbox Properties
 
