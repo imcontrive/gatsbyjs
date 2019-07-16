@@ -36,7 +36,7 @@ into multiple lines.
 >  flex-wrap: wrap-reverse
     > it is similar to wrap but it works in opposite direction.
 ### Example:-
-```
+``` html
   <div class="container">
     <div class="box">1</div>
     <div class="box">2</div>
