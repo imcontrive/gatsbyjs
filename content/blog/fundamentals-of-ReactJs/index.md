@@ -18,10 +18,9 @@ In this article, I hope to explain what I consider some of the most important fu
 8. Pure functions vs Impure functions ?
 9. What is Reconciliation Algorithm ?
 10. Why React is More Efficient ?
+______________________________________
 
-### Ready ??
-
-# 1. What is React and Why Should we used it?
+# 1. What is React and Why Should we used it ?
 `ReactJS` is a open-source javaScript Library that was created by Facebook which is used for building user interfaces and handling view layer for web and mobile apps. It’s also allow to create reusable UI components.
 
 The core objective of ReactJS is providing the best possible rendering performance. The reason behind using ReactJS is to be fast and scalable and simple. It allows us to create large web applications which can change data, without reloading the page.
