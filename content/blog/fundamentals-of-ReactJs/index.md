@@ -67,19 +67,24 @@ iii) It’s describes the control for the computations or for changing the state
 i) JSX is a preprocessor step that adds XML syntax to JavaScript.
 ii) JSX is a XML-like syntax extension to ECMAScript without any defined semantics.
 iii) In other words, JSX is a syntax extension to javaScript. It produced react components.
+``` html
+
 const element = <h1> Welcome to ALtCampus </h1>
+
+```
 ### Element :
 An element is a plain object describing a component instance or DOM node and It’s desired Properties.
+
 ### Component:
 i) It’s a basic building block of any React app.
 ii) It is a javaScript class or function that optionally accepts input i.e. props and returns a React element that describes how a section of UI should appear.
 
 ## 6. What are the different types of Components In React ?
 There are two types of components in ReactJS
-i) Functional component :
-Functional components are those components i.e. usually defined as a function of its state and props .
+### i) Functional component :
+`Functional components` are those components i.e. usually defined as a function of its state and props .
 
-``` 
+``` js
 import React from 'react';
 
 function App() {
@@ -88,44 +93,58 @@ function App() {
   return <h1>{greeting}</h1>;
 }
 
-export default App; ```
+export default App; 
+```
 
-ii) class component:
-class components have some additional features .
+### ii) class component:
+
+`Class components` have some additional features like `Props & state`.
+``` js
 class classComponent extends React.Component {
+  super();
+  constructor(){
+    this.state;
+  }
   render() {
      return <div> My Class Component </div> 
   }
 }
+```
 
 ## 7.What is render in Props ?
-The term “render prop” refers to a technique for sharing code between React components using a prop whose value is a function.
+The term `render prop` refers to a technique for sharing code between React components using a prop whose value is a function.
 
-`` <Provider render={data => (
+``` js
+ <Provider render={data => (
   <h1>Hello {data.target}</h1>
-)}/>``
+)}/>
+```
 
 ## 8. Pure functions vs Impure functions ?
 
 ### Pure functions :
-i) Pure functions are those functions that accept an input and returns a values without modifying any data outside it’s scope.
-ii) A Pure function always returns the same value as the given input.
-iii) A Pure function should not have any side effetcs like mutataing the data , console.log, Math.random and Rendering API calls.
+i) `Pure functions `are those functions that accept an input and returns a values without modifying any data outside it’s scope.
+
+ii) A `Pure function` always returns the same value as the given input.
+
+iii) A `Pure function` should not have any side effetcs like mutataing the data , console.log, Math.random and Rendering API calls.
 
 ### Impure functions :
-i) Impure functions are those functions that accept an input and returns a modifying data outside of it’s lexical scope.
-ii) Impure functions mutates the variable /state /data outside of it’s lexical scope.
+i) `Impure functions` are those functions that accept an input and returns a modifying data outside of it’s lexical scope.
+
+ii) `Impure functions` mutates the variable /state /data outside of it’s lexical scope.
+
 `Lexical Scope` : A convention used in many programs to sets the scope (range of functionality) of a variable so that it may only be called from within the code is defined.
 In simple , lexical Scope means the variables defined inside a function .
 
 ## 9. What is Reconciliation Algorithm ?
-i) In simple, “ Reconciliation is the action of making one view or belief compatible with another.”
+i) In simple, “ `Reconciliation` is the action of making one view or belief compatible with another.”
 
 ii) It’s a process through which react updates the DOM. When a components state’s changes ,React has to calculate if it is necessary to update the DOM. It does by creating a VIRTUAL DOM and comparing with the current DOM.
 
- `Virtual` `DOM` :
-‘“ The virtual DOM is the instance of existing DOM, that contain the new state of the component. ”’
+ `Virtual` `DOM` :  The virtual DOM is the instance of existing DOM, that contain the `new state` of the component.
 
 ## 10. Why React is More Efficient ?
 `ReactJS` is more efficient because of Reconciliation (Diffing Algorithm). React re-render only that elements whose state are changed instead of overall element or view.
-Hope you have enjoyed this article. In the next article, we will discuss the component life cycles of ReactJS. So, stay tuned for the next article.
+
+Hope you have enjoyed this Post. In the next Post, I will discuss the life cycles components  of ReactJS. So, stay tuned for the next Post.
